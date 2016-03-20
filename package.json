@@ -9,6 +9,9 @@
     "pretest": "npm run build && browserify -v -o bundle.spec.js index.spec.js",
     "prepublish": "npm run build"
   },
+  "repository": {
+    "url": "https://github.com/laco0416/angular2-twitter-share-button"
+  },
   "keywords": [
     "angular2",
     "angular",
