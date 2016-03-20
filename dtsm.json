@@ -1,0 +1,20 @@
+{
+  "repos": [
+    {
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "ref": "master"
+    }
+  ],
+  "path": "typings",
+  "bundle": "typings/bundle.d.ts",
+  "link": {
+    "npm": {
+      "include": true
+    }
+  },
+  "dependencies": {
+    "jasmine/jasmine.d.ts": {
+      "ref": "6766ed1d0faf02ede9e2edf2e66bbb2388c825ec"
+    }
+  }
+}

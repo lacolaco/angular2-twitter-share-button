@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+typings/
+
+*.js
+*.d.ts
+!karma.conf.js

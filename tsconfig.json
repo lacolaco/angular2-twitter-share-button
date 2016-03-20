@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "noImplicitAny": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node"
+  },
+  "files": [
+    "index.ts",
+    "index.spec.ts",
+    "src/angular2-twitter-share-button.component.ts",
+    "src/angular2-twitter-share-button.component.ts"
+  ]
+}

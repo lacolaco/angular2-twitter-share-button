@@ -1,0 +1,33 @@
+{
+  "name": "angular2-twitter-share-button",
+  "version": "0.1.0",
+  "description": "Angular2 component for twitter share button",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "karma start",
+    "pretest": "npm run build && browserify -v -o bundle.spec.js index.spec.js",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "angular2",
+    "angular",
+    "twitter"
+  ],
+  "author": "laco0416 <laco0416@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.8",
+    "ng2lint": "0.0.10",
+    "tslint": "^3.6.0",
+    "typescript": "^1.8.9",
+    "typescript-formatter": "^2.1.0"
+  },
+  "peerDependencies": {
+    "angular2": "^2.0.0-beta.9"
+  }
+}
