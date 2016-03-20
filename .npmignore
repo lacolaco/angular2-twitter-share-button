@@ -3,4 +3,6 @@ node_modules/
 typings/
 
 dtsm.json
-*.spec.js
+*.spec.*
+*.ts
+!*.d.ts
