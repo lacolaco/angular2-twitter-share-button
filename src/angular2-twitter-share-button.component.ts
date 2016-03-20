@@ -1,5 +1,5 @@
 import {
-    Component, ChangeDetectionStrategy, ElementRef, Renderer, Input, Output, OnChanges, EventEmitter
+    Component, ChangeDetectionStrategy, ElementRef, Renderer, Input, Output, OnInit, OnChanges, EventEmitter
 } from "angular2/core";
 
 interface ShareButtonOptions {
@@ -18,7 +18,7 @@ interface ShareButtonOptions {
     template: ``,
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TwitterShareButtonComponent implements OnChanges {
+export class TwitterShareButtonComponent implements OnInit, OnChanges {
 
     @Input() location: string;
     @Input() text: string;
@@ -32,6 +32,10 @@ export class TwitterShareButtonComponent implements OnChanges {
     @Output() load: EventEmitter<any> = new EventEmitter<any>();
 
     constructor(private element: ElementRef, private renderer: Renderer) {
+    }
+
+    ngOnInit() {
+        this.loadWidget();
     }
 
     ngOnChanges() {
@@ -51,7 +55,7 @@ export class TwitterShareButtonComponent implements OnChanges {
                         resolve();
                     });
             });
-        });
+        })
     }
 
     private renderShareButton(): Promise<any> {
