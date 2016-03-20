@@ -1,6 +1,6 @@
 {
   "name": "angular2-twitter-share-button",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Angular2 component for twitter share button",
   "main": "index.js",
   "scripts": {
