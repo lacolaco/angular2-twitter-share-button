@@ -18,6 +18,7 @@ import {TwitterShareButtonComponent} from "angular2-twitter-share-button";
         <twitter-share-button></twitter-share-button>
     `,
     directives: [TwitterShareButtonComponent]
+})
 export class SomeComponent {
 }
 ```
